@@ -1,0 +1,18 @@
+# Template file for 'arc-theme'
+pkgname=arc-theme
+version=20170302
+revision=1
+build_style=gnu-configure
+hostmakedepends="autoconf automake pkg-config libtool"
+makedepends="gdk-pixbuf-devel glib-devel gtk+3-devel"
+depends="gtk+3 gtk-engine-murrine"
+short_desc="Arc is a flat theme with transparent elements"
+maintainer="Jasu Koponen <jasu.koponen@hotmail.com>"
+license="GPL-3"
+homepage="https://github.com/horst3180/$pkgname"
+distfiles="https://github.com/horst3180/$pkgname/archive/$version.tar.gz"
+checksum=9ca5c1d1ac267c4ae3725e84519d42bfb8c4c6934989839ebe3cb8699fbdfd45
+
+pre_configure() {
+	./autogen.sh
+}

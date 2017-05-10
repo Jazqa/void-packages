@@ -2,9 +2,8 @@
 pkgname=brisk-menu
 version=0.3.5
 revision=1
-only_for_archs="i686 x86_64"
 build_style=gnu-configure
-hostmakedepends="pkg-config intltool"
+hostmakedepends="glib pkg-config intltool"
 makedepends="gtk+3-devel mate-menus-devel libmate-panel-devel"
 depends="mate-panel"
 short_desc="Modern, efficient menu for the MATE DE"
